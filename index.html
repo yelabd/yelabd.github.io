@@ -1,35 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Youssef Elabd</title>
-	<link rel="stylesheet" type="text/css" href="css/master.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
-<body>
-
-
-<div class="prof-box">
-	<img src="images/prof.JPG" class="prof-pic">
-	<h1>Youssef Elabd</h1>
-	<!--
-	<h5>Computer Science student at Purdue University</h5>
-	-->
-	<div class="line-break"></div>
-	<!--
-	<p>
-		Big fan of space exploration, big data, and software development
-	</p>
-	-->
-	<div class="social-icons">
-		<a href="https://github.com/yelabd" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-		<a href="https://www.linkedin.com/in/youssefelabd/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-		<a href="https://drive.google.com/file/d/0B8PLWy9NW75xeEVLZWJUVFBYRUk/view?usp=sharing"><i class="fa fa-file-text" aria-hidden="true"></i></a>
-		<a href="mailto:ykelabd@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-	</div>
-	
-</div>
-
-</body>
-
-
+    <head>
+        <meta charset="utf-8" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
+        <script src="openseadragon/openseadragon.min.js"></script>
+        <script type="text/javascript">
+            var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "/openseadragon/images/",
+            tileSources: "gallery_image.dzi",
+            showNavigator: true
+            });
+        </script>
+    </body>
 </html>
